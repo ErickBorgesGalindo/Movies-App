@@ -82,7 +82,7 @@ Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones
 
 ## Autores ✒️
 
-* **Erick Borges** - *Trabajo Inicial* - [Alecs](https://github.com/villanuevand)
+* **Erick Borges** - *Trabajo Inicial* - [Alecs](https://github.com/ErickBorgesGalindo)
 
 ## Licencia 📄
 
@@ -92,4 +92,4 @@ Este proyecto está bajo la Licencia GPL 🐧  - mira el archivo [LICENSE.md](LI
 
 * Comenta a otros sobre este proyecto 📢
 * Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
-* Da las gracias públicamente 🤓.
+* Da las gracias públicamente 🤓
