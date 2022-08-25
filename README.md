@@ -17,12 +17,17 @@ Mira **Deployment** para conocer como desplegar el proyecto.
 Este proyecto hace uso de:
 - Expo
 ```
-npm i -g expo-cli
+npm install -g expo-cli
 ```
 
 - NativeBase
 ```
 npm install native-base
+```
+
+- ReactNavigationStack
+```
+npm install react-navigation-stack
 ```
 
 - API de:
