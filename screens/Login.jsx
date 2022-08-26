@@ -72,7 +72,7 @@ const Login = ({navigation}) => {
                             size={30} 
                             onPress={() => setShow(!show)} /> }/>
 
-                    <Button width={300} height={10} mt={20} colorScheme="secondary" borderRadius={20}  alignSelf={'center'} onPress={()=>navigation.navigate('Login')}>
+                    <Button width={300} height={10} mt={20} colorScheme="secondary" borderRadius={20}  alignSelf={'center'} onPress={()=>navigation.navigate('Navigation')}>
                         <Text fontSize={15} color={'white'} bold >Login</Text>
                     </Button>
 

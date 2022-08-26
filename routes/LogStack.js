@@ -7,6 +7,7 @@ import FirstScreen from "../screens/FirstScreen";
 import Login from "../screens/Login";
 import SignUp from "../screens/SignUp";
 import RecoveryPass from "../screens/RecoveryPass";
+import Navigation from "./Navigation";
 
 const LogStackNavigator = createNativeStackNavigator();
 
@@ -51,6 +52,13 @@ function LogStack({ navigation }) {
                 headerTransparent:true,
                 headerBackTitleVisible: false,
                 headerTintColor: 'white'
+            }} />
+
+            <LogStackNavigator.Screen 
+            name="Navigation" 
+            component={Navigation}
+            options={{
+                headerShown: false
             }} />
           
         </LogStackNavigator.Navigator>
