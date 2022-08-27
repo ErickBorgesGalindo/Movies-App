@@ -8,6 +8,7 @@ import Login from "../screens/Login";
 import SignUp from "../screens/SignUp";
 import RecoveryPass from "../screens/RecoveryPass";
 import Navigation from "./Navigation";
+import MovieDetail from "../screens/Home/MovieDetail";
 
 const LogStackNavigator = createNativeStackNavigator();
 
@@ -59,6 +60,16 @@ function LogStack({ navigation }) {
             component={Navigation}
             options={{
                 headerShown: false
+            }} />
+
+            <LogStackNavigator.Screen 
+            name="MovieDetail" 
+            component={MovieDetail}
+            options={{
+              headerShown: true,
+              headerTransparent:true,
+              headerBackTitleVisible: false,
+              headerTintColor: '#DD4AA2'
             }} />
           
         </LogStackNavigator.Navigator>

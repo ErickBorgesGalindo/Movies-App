@@ -13,7 +13,7 @@ import {
 
 const image = { uri: "https://images.pexels.com/photos/7991180/pexels-photo-7991180.jpeg?cs=srgb&dl=pexels-tima-miroshnichenko-7991180.jpg&fm=jpg" };
 
-const RecoveryPass = () => {
+const RecoveryPass = ({navigation}) => {
   const [show, setShow] = useState(false);
 
   return (

@@ -5,35 +5,38 @@ import { Ionicons } from "@expo/vector-icons";
 
 //Screens
 import Home from "../screens/Home/Home";
-import Setttings from "../screens/Home/Setttings";
+import Series from "../screens/Home/Series";
 import Profile from "../screens/Home/Profile";
+import MovieDetail from "../screens/Home/MovieDetail";
+import { NativeBaseProvider } from "native-base";
 
 
 const Tab = createBottomTabNavigator()
 
 function MyTabs() {
     return(
-        <Tab.Navigator
+        <NativeBaseProvider>
+            <Tab.Navigator
             screenOptions={{
                 tabBarActiveTintColor: '#DD4AA2'
             }}
         >
             <Tab.Screen 
-                name='HomeScreen' 
+                name='Movies' 
                 component={Home}
                 options= {{
-                    tabBarIcon: ({color, size}) => (<Ionicons name="home-outline" color={color} size={size}/>),
+                    tabBarIcon: ({color, size}) => (<Ionicons name="videocam-outline" color={color} size={size}/>),
                     tabBarBadge: 0,
                     headerShown: false
                 }}/>
 
             <Tab.Screen
-                 name='Settings' 
-                 component={Setttings}
+                 name='Series' 
+                 component={Series}
                  options= {{
-                    tabBarIcon: ({color, size}) => (<Ionicons name="settings-outline" color={color} size={size}/>),
+                    tabBarIcon: ({color, size}) => (<Ionicons name="camera-outline" color={color} size={size}/>),
                     tabBarBadge: 0,
-                    headerShown: true
+                    headerShown: false
                 }}/>
 
             <Tab.Screen 
@@ -44,7 +47,8 @@ function MyTabs() {
                     tabBarBadge: 0,
                     headerShown: true
                 }}/>
-        </Tab.Navigator>
+            </Tab.Navigator>
+        </NativeBaseProvider>
     );
 }
 
