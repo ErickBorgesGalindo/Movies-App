@@ -26,7 +26,7 @@ function MyTabs() {
                 component={Home}
                 options= {{
                     tabBarIcon: ({color, size}) => (<Ionicons name="videocam-outline" color={color} size={size}/>),
-                    tabBarBadge: 0,
+                    // tabBarBadge: 0,
                     headerShown: false
                 }}/>
 
@@ -35,7 +35,7 @@ function MyTabs() {
                  component={Series}
                  options= {{
                     tabBarIcon: ({color, size}) => (<Ionicons name="camera-outline" color={color} size={size}/>),
-                    tabBarBadge: 0,
+                    // tabBarBadge: 0,
                     headerShown: false
                 }}/>
 
@@ -44,7 +44,7 @@ function MyTabs() {
                 component={Profile}
                 options= {{
                     tabBarIcon: ({color, size}) => (<Ionicons name="person-outline" color={color} size={size}/>),
-                    tabBarBadge: 0,
+                    // tabBarBadge: 0,
                     headerShown: true
                 }}/>
             </Tab.Navigator>

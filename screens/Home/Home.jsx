@@ -4,7 +4,7 @@ import { GET } from '../../API/Api';
 import { IMAGE_POSTER_URL } from '../../API/Config';
 import { Ionicons } from "@expo/vector-icons";
 
-const Home = ({navigation}) => {
+const Home = ({navigation}, props) => {
     const [movies, setMovies] = useState([]);
     const [time, setTime] = useState([]);
   
@@ -15,17 +15,6 @@ const Home = ({navigation}) => {
         setMovies(response.results);
         console.log('=====RESPONSE RESUL======')
         console.log(response.results)
-  
-  
-        // const images = response.results.map((data) => `${IMAGE_POSTER_URL}${data.backdrop_path}`);
-        // let backImages = [];
-  
-        // for(let i = 0; i<10 ; i++){
-        //   backImages =[...backImages, images[i]];
-        // }
-  
-        // setImages(backImages);
-        // console.log(images)
       };
   
       getMovies();
@@ -66,7 +55,7 @@ const Home = ({navigation}) => {
                       resizeMode={'cover'} 
                       borderRadius={10}
                       key={result.id}
-                      onTouchEnd={()=> navigation.navigate('MovieDetail')}/>
+                      onTouchEnd={()=> {navigation.navigate('MovieDetail',{ movieId: result.id })}}/>
                     <VStack>
                       <Text mt={10} ml={3} maxW={200} fontSize={15} bold>{result.title}</Text>
                       <Text mt={2} ml={3} fontSize={15}>{result.release_date.slice(0,4)}</Text>

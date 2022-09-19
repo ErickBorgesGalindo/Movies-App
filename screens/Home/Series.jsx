@@ -16,17 +16,6 @@ const Series = ({navigation}) => {
       setMovies(response.results);
       console.log('=====RESPONSE RESUL======')
       console.log(response.results)
-
-
-      // const images = response.results.map((data) => `${IMAGE_POSTER_URL}${data.backdrop_path}`);
-      // let backImages = [];
-
-      // for(let i = 0; i<10 ; i++){
-      //   backImages =[...backImages, images[i]];
-      // }
-
-      // setImages(backImages);
-      // console.log(images)
     };
 
     getMovies();
